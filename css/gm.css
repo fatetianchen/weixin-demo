@@ -1,12 +1,13 @@
+
 body{
 		background-color: #eff0ef;
 }
 .A-main-a,.A-main-b{
 	width: 14rem;
-	height: 9rem;
+	height: 10.75rem;
 	background-color: white;
 	left: 50%;
-	top: 1.6rem;
+	top: 0.7rem;
 	margin-left: -7rem;
 }
 .A-main-b{
@@ -21,12 +22,19 @@ body{
 }
 .img{
 	width: 100%;
-	height: 6.2rem;
-	background: url(../img/base-01_03.gif) no-repeat center center;
+	height: 6.25rem;
+}
+.img2{
+	background: url(../img/F-bj_03.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+.img1{
+	background: url(../img/E-bj_03.jpg) no-repeat center center;
 	background-size: 100% 100%;
 }
 .p p{
 	padding-left: 0.7rem;
+	line-height: 1.1rem;
 }
 .p p:nth-of-type(1){
 	font-size: 0.7rem;
@@ -39,7 +47,7 @@ body{
 }
 .A-main-button form{
 	float: right;
-	width: 28%;
+	width: 50%;
 	height: 100%;
 }
 .A-main-button form button{
@@ -50,17 +58,24 @@ body{
 	border-bottom:none ;
 	border-right:none ;
 	border-color: #c9c9c9;
-	background-color: #e8e8e8;
 	color: #5b5b5b;
+	padding-left: 3.5rem;
+	box-sizing: border-box;
+	text-align: left;
 }
-.A-main-button .jp{
-	outline:none;
-	border-top:none ;
-	border-bottom:none ;
-	border-right:none ;
-	width: 16%;
-	height: 100%;
-	background: #e8e8e8 url(../img/jp_03.png) no-repeat center center;
-	background-size: 80% 50%;
+.A-main-button form:nth-of-type(2) button{
 	border-left:none ;
+	background: #e8e8e8 url(../img/E-gm_03.png) no-repeat 1.7rem center;
+    background-size: 18% 55%;
+}
+.A-main-button form:nth-of-type(1) button{
+	padding-left: 3.2rem;
+	background: #e8e8e8 url(../img/E-gm_05.png) no-repeat 1.43rem center;
+    background-size: 18% 55%;
+}
+.F-main-a,.F-main-b{
+	height: 9.45rem;
+}
+.F-main-b{
+	top: 11.2rem;
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gamepoch</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ss.css"/>
+		<script>
+//  	设置手机端像素与pc端像素对等
+			var pixclPatio = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixclPatio+',minimum-scale='+pixclPatio+',maximum-scale='+pixclPatio+',user-scalable=no" />');
+			
+			var html = document.getElementsByTagName('html')[0];
+			var pageWidth = html.getBoundingClientRect().width;
+			html.style.fontSize = pageWidth / 16 + 'px';
+		</script>
+	</head>
+	<body>
+		<div class="D-title clearfix por">
+			<a href="#" class="poa"></a>
+			Gamepoch
+			<a href="#" class="poa"></a>
+		</div>
+		<div class="qieh clearfix">
+			<a href="#">赛事1</a>
+			<a href="#">赛事2</a>
+			<a href="#">赛事3</a>
+			<a href="#">赛事4</a>
+		</div>
+		<div class="qieh-1">
+			<div class="top"></div>
+			<div class="title">死亡班机2 线下赛排行</div>
+			<ul class="clearfix">
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Liam Guu</h4>
+						<p><span></span>USA</p>
+					</div>
+					<div class="D-sj poa">3586pt</div>
+				</li>
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Juer col</h4>
+						<p><span></span>EN</p>
+					</div>
+					<div class="D-sj poa">3320pt</div>
+				</li>
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Jxfeng</h4>
+						<p><span></span>ZN</p>
+					</div>
+					<div class="D-sj poa">2958pt</div>
+				</li>
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Are goii</h4>
+						<p><span></span>EN</p>
+					</div>
+					<div class="D-sj poa">2333pt</div>
+				</li>
+			</ul>
+			<ul class="clearfix">
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Liam Guu</h4>
+						<p><span></span>USA</p>
+					</div>
+					<div class="D-sj poa">3586pt</div>
+				</li>
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Juer col</h4>
+						<p><span></span>EN</p>
+					</div>
+					<div class="D-sj poa">3320pt</div>
+				</li>
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Jxfeng</h4>
+						<p><span></span>ZN</p>
+					</div>
+					<div class="D-sj poa">2958pt</div>
+				</li>
+			</ul>
+			<ul class="clearfix">
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Liam Guu</h4>
+						<p><span></span>USA</p>
+					</div>
+					<div class="D-sj poa">3586pt</div>
+				</li>
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Juer col</h4>
+						<p><span></span>EN</p>
+					</div>
+					<div class="D-sj poa">3320pt</div>
+				</li>
+			</ul>
+			<ul class="clearfix">
+				<li>
+					<div class="poa toux"></div>
+					<div class="D-name poa">
+						<h4>Liam Guu</h4>
+						<p><span></span>USA</p>
+					</div>
+					<div class="D-sj poa">3586pt</div>
+				</li>
+			</ul>
+			
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+        $(".qieh a").click(function(){
+          $(".qieh a").css({'color':'#51c4d4','background-color':'#fff'}).eq($(this).index()).css({'color':'#fff','background-color':'#51c4d4'});
+          $(".qieh-1 ul").css('display','none').eq($(this).index()).css('display','block')
+        });
+    });
+	</script>
+</html>
