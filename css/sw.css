@@ -1,0 +1,55 @@
+body{
+	background-color: #fff0f6;
+	color: #8b8b8b;
+}
+.B-top{
+	width: 100%;
+	height: 6.67rem;
+	background: url(../img/B-top.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+.B-title{
+	width: 100%;
+	height: 2.1rem;
+	background-color: #fff;
+	border: 1px solid #dadada;
+	line-height: 2.1rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+.B-map{
+	width: 100%;
+	height: 7.22rem;
+	background-color: #fff;
+	border: 1px solid #dadada;
+}
+.B-title-c{
+	width: 100%;
+	height: 4.3rem;
+	background-color: #fff;
+	font-size: 0.65rem;
+	padding-top: 0.6rem;
+	box-sizing: border-box;
+}
+.B-title-c p{
+	margin-bottom: 0.5rem;
+	padding-left: 0.5rem;
+}
+.bth{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2.45rem;
+
+}
+.bth button{
+	width: 100%;
+	height: 100%;
+	background-color: #04be02;
+	text-align: center;
+	line-height: 2.45rem;
+	font-size:0.7rem ;
+	color: #fff;
+	letter-spacing: 0.05rem;
+}

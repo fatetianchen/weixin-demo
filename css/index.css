@@ -1,0 +1,65 @@
+body{
+		background-color: #eff0ef;
+}
+.A-main-a,.A-main-b{
+	width: 14rem;
+	height: 9rem;
+	background-color: white;
+	left: 50%;
+	top: 1.6rem;
+	margin-left: -7rem;
+}
+.A-main-b{
+	top: 12rem;
+}
+.A-main-button{
+	width: 100%;
+	height: 2.5rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.img{
+	width: 100%;
+	height: 6.2rem;
+	background: url(../img/base-01_03.gif) no-repeat center center;
+	background-size: 100% 100%;
+}
+.p p{
+	padding-left: 0.7rem;
+}
+.p p:nth-of-type(1){
+	font-size: 0.7rem;
+	margin-top: 0.6rem;
+}
+.p p:nth-of-type(2){
+	font-size: 0.6rem;
+	color: #54c6d6;
+	font-family: "微软雅黑";
+}
+.A-main-button form{
+	float: right;
+	width: 28%;
+	height: 100%;
+}
+.A-main-button form button{
+	width: 100%;
+	height: 100%;
+	font-size: 0.7rem;
+	border-top:none ;
+	border-bottom:none ;
+	border-right:none ;
+	border-color: #c9c9c9;
+	background-color: #e8e8e8;
+}
+.A-main-button .jp{
+	outline:none;
+	border-top:none ;
+	border-bottom:none ;
+	border-right:none ;
+	width: 16%;
+	height: 100%;
+	background: #e8e8e8 url(../img/jp_03.png) no-repeat center center;
+	background-size: 80% 50%;
+	border-left:none ;
+}

@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "宋体";
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+.clearfix:after,.clearfix:before{  /*清除浮动*/
+   content: "";
+   display: table;
+}
+.clearfix:after{
+   clear: both;
+}
+.clearfix{
+  *zoom:1; /*兼容IE和IE7*/
+}
+.poa{
+	position: absolute;
+}
+.por{
+	position: relative;
+}	
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.mtop{
+	margin-top: 0.3rem;
+}
+.pl{
+	padding-left: 6rem;
+}
+.mtop25{
+	margin-top: 0.25rem;
+}

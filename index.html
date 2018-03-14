@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gamepoch</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script>
+//  	设置手机端像素与pc端像素对等
+			var pixclPatio = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixclPatio+',minimum-scale='+pixclPatio+',maximum-scale='+pixclPatio+',user-scalable=no" />');
+			
+			var html = document.getElementsByTagName('html')[0];
+			var pageWidth = html.getBoundingClientRect().width;
+			html.style.fontSize = pageWidth / 16 + 'px';
+		</script>
+	</head>
+	<body>
+			<div class="A-main-a poa p">
+				<a href="#"><div class="img"></div></a>
+				<p>永不孤单</p>
+				<p>gamepoch.com</p>
+			</div>
+			<div class="A-main-b poa p">
+				<a href="#"><div class="img"></div></a>
+				<p>永不孤单</p>
+				<p>gamepoch.com</p>
+			</div>
+			<div class="A-main-button clearfix">				
+				<form action="" >
+					<button>游戏观园</button>
+				</form>
+				<form action="" >
+					<button>赛事活动</button>
+				</form>
+				<form action="sw.html" >
+					<button>体验报名</button>
+				</form>
+					<button class="jp"></button>
+			</div>
+	</body>
+</html>

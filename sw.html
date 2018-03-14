@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gamepoch</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sw.css"/>
+		<script>
+//  	设置手机端像素与pc端像素对等
+			var pixclPatio = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixclPatio+',minimum-scale='+pixclPatio+',maximum-scale='+pixclPatio+',user-scalable=no" />');
+			
+			var html = document.getElementsByTagName('html')[0];
+			var pageWidth = html.getBoundingClientRect().width;
+			html.style.fontSize = pageWidth / 16 + 'px';
+		</script>
+	</head>
+	<body>
+		<div class="B-top">			
+		</div>
+		<div class="B-title">死亡班机2 线下赛</div>
+		<div class="B-title mtop">日期：2016.5.6——5.7</div>
+		<div class="B-map mtop"  id="allmap"></div>
+		<div class="B-title-c mtop">
+			<p>小组赛循环Bo1，12晋级，34淘汰。</p>
+			<p>淘汰赛直接Bo1，没有败者组。单局比赛超过60分钟，</p>
+			<p>采取突然死亡制，哪边先死1个就判负。</p>
+		</div>
+		<form action="" class="bth ">
+			
+			<button>
+				我要加入
+			</button>
+		</form>
+	</body>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wDYEcxgRRheZwyC9jpN1Tt7fzr2zjosZ"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">  
+
+    var map = new BMap.Map("allmap");  
+    var point = new BMap.Point(121.4996580000,31.1943060000);
+    map.centerAndZoom(point, 16);  
+    map.enableScrollWheelZoom(); 
+
+    var myIcon = new BMap.Icon("myicon.png",new BMap.Size(30,30),{
+        anchor: new BMap.Size(10,10)    
+    });
+
+    var marker=new BMap.Marker(point,{icon: myIcon});  
+    map.addOverlay(marker);  
+
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            //map.panTo(r.point);//地图中心点移到当前位置
+            var latCurrent = r.point.lat;
+            var lngCurrent = r.point.lng;
+            //alert('我的位置：'+ latCurrent + ',' + lngCurrent);
+
+            
+            
+            //location.href="http://api.map.baidu.com/direction?origin="+latCurrent+","+lngCurrent+"&destination=31.24916171,121.48789949&mode=driving&region=上海&output=html";
+//31.24916171,121.48789949
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    },{enableHighAccuracy: true})
+
+
+ //   map.addOverlay(marker);  
+//  var licontent="<b>健龙森羽毛球馆</b><br>";  
+//      licontent+="<span><strong>地址：</strong>北京市通州区滨河中路108号</span><br>";  
+//      licontent+="<span><strong>电话：</strong>(010)81556565 / 6969</span><br>";          
+//  var opts = { 
+//      width : 200,
+//      height: 80,
+//  };         
+//    var  infoWindow = new BMap.InfoWindow(licontent, opts);  
+//  marker.openInfoWindow(infoWindow);  
+//  marker.addEventListener('click',function(){
+//      marker.openInfoWindow(infoWindow);
+//  });  
+
+</script>
+</html>
