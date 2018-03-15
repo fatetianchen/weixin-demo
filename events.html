@@ -4,16 +4,8 @@
 		<meta charset="utf-8" />
 		<title>Gamepoch</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="css/ss.css"/>
-		<script>
-//  	设置手机端像素与pc端像素对等
-			var pixclPatio = 1 / window.devicePixelRatio;
-			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixclPatio+',minimum-scale='+pixclPatio+',maximum-scale='+pixclPatio+',user-scalable=no" />');
-			
-			var html = document.getElementsByTagName('html')[0];
-			var pageWidth = html.getBoundingClientRect().width;
-			html.style.fontSize = pageWidth / 16 + 'px';
-		</script>
+		<link rel="stylesheet" type="text/css" href="css/events.css"/>
+		<script src="js/viewport.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="D-title clearfix por">
@@ -122,12 +114,6 @@
 		</div>
 	</body>
 	<script src="js/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(e) {
-        $(".qieh a").click(function(){
-          $(".qieh a").css({'color':'#51c4d4','background-color':'#fff'}).eq($(this).index()).css({'color':'#fff','background-color':'#51c4d4'});
-          $(".qieh-1 ul").css('display','none').eq($(this).index()).css('display','block')
-        });
-    });
-	</script>
+	<script src="js/events.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
 </html>

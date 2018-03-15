@@ -9,7 +9,7 @@
 	background-size: 100% 100%;
 	
 }
-.G-main>div{
+.G-main>.T-y{
 	width: 100%;
 	height: 10.6rem;
 	background-color: rgba(0,0,0,0.7);
@@ -20,7 +20,7 @@
 	padding-top: 0.75rem;
 	box-sizing: border-box;
 }
-.G-main>div button{
+.G-main>.T-y button{
 	width: 4.6rem;
 	height: 1.33rem;
 	background-color: #47d9bf;
@@ -32,17 +32,17 @@
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
-.G-main>div p{
+.G-main>.T-y p{
 	margin-top: 0.3rem;
 	margin-bottom: 0.6rem;
 }
-.G-main>div .G-tb{
+.G-main>.T-y .G-tb{
 	width: 100%;
 	height: 1rem;
 	/*background-color: #fff;*/
 	padding-left: 3.5rem;
 }
-.G-main>div .G-tb>div{
+.G-main>.T-y .G-tb>div{
 	height: 100%;
 	float: left;
 	/*padding-left: 1.13rem;*/
@@ -52,29 +52,78 @@
 	font-family: "微软雅黑";
 	padding-right: 0.85rem;
 }
-.G-main>div .G-tb>div i{
+.G-main>.T-y .G-tb>div i{
 	float: left;
 	margin-right: 0.25rem;
 	display: inline-block;
 	width: 1rem;
 	height: 100%;
 }
-.G-main>div .G-tb>div:nth-of-type(1) i{
+.G-main>.T-y .G-tb>div:nth-of-type(1) i{
 	
 	background: url(../img/G-tb_03.png) no-repeat center center;
 	background-size: 100% 100%;
 }
-.G-main>div .G-tb>div:nth-of-type(2) i{
+.G-main>.T-y .G-tb>div:nth-of-type(2) i{
 	
 	background: url(../img/G-tb_06.png) no-repeat center center;
 	background-size: 100% 100%;
 }
-.G-main>div .G-tb>div:nth-of-type(3) i{
+.G-main>.T-y .G-tb>div:nth-of-type(3) i{
 	
 	background: url(../img/G-tb_08.png) no-repeat center center;
 	background-size: 100% 100%;
 	
 }
-.G-main>div .G-tb>div:nth-of-type(3){
+.G-main>.T-y .G-tb>div:nth-of-type(3){
 	padding-right: 0;
+}
+.G-main .T-top{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.G-main .T-top .H-dh{
+	width: 13rem;
+	height: 6.5rem;
+	background-color: rgba(0,0,0,0.8);
+	left: 50%;
+	margin-left: -6.5rem;
+	top: 6.5rem;
+	padding: 0.5rem 0;
+	box-sizing: border-box;
+	font-family: "微软雅黑";
+}
+.G-main .T-top .H-dh p{
+	text-align: center;
+	color: #fff;
+	font-size: 0.63rem;	
+}
+.G-main .T-top .H-dh form{
+	width: 10.8rem;
+	/*height: 1.3rem;*/
+	margin: 0 auto;
+	padding-top: 0.4rem;
+	text-align: center;
+}
+.G-main .T-top .H-dh input:nth-of-type(1){
+	width: 100%;
+	height: 1.3rem;
+	background-color: rgba(0,0,0,0.5);
+	outline: none;
+	border: 0.075rem solid #fff;
+	color: #fff;
+	font-size: 0.6rem;
+	
+}
+.G-main .T-top .H-dh input:nth-of-type(2){
+	width: 4.6rem;
+	height: 1.33rem;
+	background-color: #47d9bf;
+	border: none;
+	color: #fff;
+	border-radius: 3rem;
+	font-size: 0.6rem;
+	margin-top: 0.5rem;
 }

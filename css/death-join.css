@@ -49,23 +49,23 @@ body{
 	left: 0.83rem;
 	top: 0.25rem;
 }
-.C-mian:nth-of-type(2) .poa{
+form .C-mian:nth-of-type(2) .poa{
 	background:url(../img/rl_03.png) no-repeat center center;
 	background-size: 100% 100%;
 }
-.C-mian:nth-of-type(4) .poa{
+form .C-mian:nth-of-type(4) .poa{
 	background:url(../img/gwc_07.png) no-repeat center center;
 	background-size: 100% 100%;
 }
-.C-mian:nth-of-type(5) .poa{
+form .C-mian:nth-of-type(5) .poa{
 	background:url(../img/rs_11.png) no-repeat center center;
 	background-size: 100% 100%;
 }
-.C-mian:nth-of-type(6) .poa{
+form .C-mian:nth-of-type(6) .poa{
 	background:url(../img/sj_15.jpg) no-repeat center center;
 	background-size: 70% 100%;
 }
-.C-mian:nth-of-type(7) .poa{
+form .C-mian:nth-of-type(7) .poa{
 	background:url(../img/xm_19.png) no-repeat center center;
 	background-size: 80% 100%;
 }
@@ -91,3 +91,36 @@ body{
 	border-right:none ;
 	border-color: #c9c9c9;
 }
+form .C-mian1:nth-of-type(3){
+	height: 3.8rem;
+	padding-top: 0.5rem;
+}
+form .C-mian1:nth-of-type(3) span{
+	display: block;
+	height: 1.3rem;
+	font-size: 0.6rem;
+	line-height: 1.3rem;
+}
+form .C-mian1:nth-of-type(2) .poa{
+	background:url(../img/H-tub_03.png) no-repeat center -0.1rem;
+	background-size: cover;
+}
+form .C-mian1:nth-of-type(3) .poa{
+	background:url(../img/H-tub_03.png) no-repeat  center -3.7rem;
+	background-size: cover;
+	top: 50%;
+	margin-top: -0.68rem;
+}
+form .C-mian1:nth-of-type(4) .poa{
+	background:url(../img/H-tub_03.png) no-repeat  center -7.1rem;
+	background-size: cover;
+}
+form .C-mian1:nth-of-type(5) .poa{
+	background:url(../img/H-tub_03.png) no-repeat  center -9.4rem;
+	background-size: cover;
+}
+form .C-mian1:nth-of-type(6) .poa{
+	background:url(../img/H-tub_03.png) no-repeat  center -11.8rem;
+	background-size: cover;
+}
+

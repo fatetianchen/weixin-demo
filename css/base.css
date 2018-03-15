@@ -51,6 +51,7 @@ ul,li{
 	color: #fff;
 	font-size: 1rem;
 	z-index: 99;
+	box-shadow: 0rem 0.03rem 0.5rem #000;
 }
 .D-title a:nth-of-type(1){
 	display: inline-block;
