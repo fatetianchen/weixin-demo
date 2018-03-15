@@ -34,9 +34,10 @@ body{
 .B-title-c p{
 	margin-bottom: 0.5rem;
 	padding-left: 0.5rem;
+	font-size: 0.6rem;
 }
 .bth{
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
