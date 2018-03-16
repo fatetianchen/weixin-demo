@@ -52,10 +52,8 @@
 	float: left;
 	width: 100%;
 	height: 2.98rem;
-/*	background-color: pink;*/
 	border-bottom: 0.025rem solid #e5e5e5;
 	position: relative;
-/*	padding-left: 3.6rem;*/
 }
 .qieh-1 ul li .toux{
 	width: 2.025rem;
@@ -72,8 +70,6 @@
 	width: 5.5rem;
 	height: 100%;
 	left: 3.63rem;
-
-/*	background-color: palegoldenrod;*/
 }
 .qieh-1 ul li .D-name h4{
 	padding-top: 0.67rem;

@@ -1,4 +1,4 @@
-$("#name").blur(function() {
+			$("#name").blur(function() {
 	         	var user = $("#name").val();
 	         	var name = /^[a-zA-Z\u4e00-\u9fa5]+$/;
 	         	if(user.length == "") {
@@ -26,7 +26,7 @@ $("#name").blur(function() {
 					return false;
 	         	}
 	         })	
-	$("#rens").blur(function() {
+			$("#rens").blur(function() {
 	         	var user = $("#rens").val();
 	         	if(user.length == "") {
 	         		$("#rens-text").text("人数不能为空").css('color','#fe4a4a');
@@ -36,32 +36,14 @@ $("#name").blur(function() {
 					return false;
 	         	}
 	         })
-	$('#email').blur(function() {
-	         	var user = $("#email").val();
-	         	var email = /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;
-	         	if(user.length == "") {
-	         		$("#email-text").text("邮箱不能为空").css('color','#fe4a4a');
-	         		return false;
-	         	}else if(!email.test(user)){
-					$("#email-text").html("邮箱不正确").css('color','#fe4a4a');
-					return false;
-	         	}else{
-	         		$("#email-text").html("输入正确").css('color','green');
-					return false;
-	         	}
-	         })
-	function isPhoneNo(phone) {   
-		var pattern = /^1[34578]\d{9}$/;   
-		return pattern.test(phone);   
-	}  
-	function isChinaName(name) {  
-		var pattern = /^[a-zA-Z\u4e00-\u9fa5]+$/;  
-		return pattern.test(name);  
-	} 
-	function isChinaName(email) {  
-		var pattern = /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;  
-		return pattern.test(email);  
-	} 
+			function isPhoneNo(phone) {   
+				var pattern = /^1[34578]\d{9}$/;   
+				return pattern.test(phone);   
+			}  
+			function isChinaName(name) {  
+				var pattern = /^[a-zA-Z\u4e00-\u9fa5]+$/;  
+				return pattern.test(name);  
+			}
 
 		function formValidate() {
 		 var str = '';
@@ -86,14 +68,6 @@ $("#name").blur(function() {
 		} else if(isPhoneNo($.trim($('#phone').val())) == false){
 			str += '手机号码不正确\n';
 			$('#phone').focus();
-		}
-		// 判断邮箱
-		if ($.trim($('#email').val()).length == 0) { 
-			str += '邮箱没有输入\n';
-			$('#email').focus();
-		} else if(isPhoneNo($.trim($('#email').val())) == false){
-			str += '邮箱不正确\n';
-			$('#email').focus();
 		}
 		 
 		 // 如果没有错误则提交

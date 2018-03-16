@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
 		<title>Gamepoch</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/events.css"/>
@@ -110,10 +111,54 @@
 					<div class="D-sj poa">3586pt</div>
 				</li>
 			</ul>
-			
 		</div>
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/events.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		(function(){
+//    $jsonp('https://weixin-test-ziweigamepoch.c9users.io',{},  
+//      function(data){
+//        document.getElementById('htt').innerHTML=JSON.stringify(data);
+//      });
+//  })()
+//		$.ajax({
+//          type: "get",
+//          async: false,
+//          url: "https://weixin-test-ziweigamepoch.c9users.io",
+//          dataType: "json",
+//          success: function (data) {
+//              alert(data);
+//          },
+//          error: function () {
+//              alert('fail');
+//          }
+//      });
+//		 $.ajax({
+//              async : true,
+//              url : "https://weixin-test-ziweigamepoch.c9users.io",
+//              type : "GET",
+//              dataType : "jsonp", // 返回的数据类型，设置为JSONP方式
+//              jsonp : 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
+//              jsonpCallback: 'handleResponse', //设置回调函数名
+//              data : {
+//                  q : "javascript", 
+//                  count : 1
+//              }, 
+//              success: function(response, status, xhr){
+//                  console.log('状态为：' + status + ',状态是：' + xhr.statusText);
+//                  console.log(response);
+//              }
+//          });
+//          var script = document.createElement('script');
+//          script.setAttribute('src', 'https://weixin-test-ziweigamepoch.c9users.io');
+//          document.querySelector("head").appendChild(script);
+// 
+//      // 处理函数
+//      function handler(data) {
+//          alert(data);
+//          // our code here...
+//      }
+	</script>
 </html>

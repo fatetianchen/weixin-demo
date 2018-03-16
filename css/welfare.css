@@ -4,14 +4,14 @@ body{
 }
 .A-main-a,.A-main-b{
 	width: 14rem;
-	height: 10.75rem;
+	height: 10rem;
 	background-color: white;
 	left: 50%;
 	top: 0.7rem;
 	margin-left: -7rem;
 }
 .A-main-b{
-	top: 12rem;
+	top: 11.3rem;
 }
 .A-main-button{
 	width: 100%;
@@ -36,7 +36,7 @@ body{
 }
 .p p:nth-of-type(1){
 	font-size: 0.7rem;
-	margin-top: 0.6rem;
+	margin-top: 0.3rem;
 }
 .p p:nth-of-type(2){
 	font-size: 0.6rem;
@@ -76,4 +76,7 @@ body{
 }
 .F-main-b{
 	top: 11.2rem;
+}
+.mtop5{
+	margin-top: 0.5rem !important;
 }
