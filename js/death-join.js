@@ -75,8 +75,8 @@
 		  alert(str);
 		  return false;
 		} else {
-//		  $('.auth-form').submit();
-			alert('完成');
+		  $('.auth-form1').submit();
+//			alert('完成');
 		 }
 		}
 		 
