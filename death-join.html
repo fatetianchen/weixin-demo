@@ -8,7 +8,7 @@
 		<script src="js/viewport.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<form action="" method="post" class="auth-form1">
+		<form id="form" onsubmit="return false" action="##" method="post" class="auth-form1">
 
 			<div class="C-mian mian-top">
 				死亡班机2 线下赛
@@ -28,17 +28,17 @@
 			</div>
 			<div class="C-mian clearfix por pl">
 				<div class="poa"></div>
-				<input type="number" id="rens" placeholder="报名人数"  class="fl"/>
+				<input type="number" id="rens" placeholder="报名人数"  class="fl"  name="userNumber"/>
 				<span id="rens-text"></span>
 			</div>
 			<div class="C-mian clearfix por pl">
 				<div class="poa"></div>
-				<input type="number" id="phone" placeholder="输入手机号码"  class="fl phone"/>
+				<input type="number" id="phone" placeholder="输入手机号码"  class="fl phone" name="userPhone"/>
 				<span id="phone-text"></span>
 			</div>
 			<div class="C-mian clearfix por pl">
 				<div class="poa"></div>
-				<input type="text" id="name" placeholder="输入姓名"  class="fl"/>
+				<input type="text" id="name" placeholder="输入姓名"  class="fl" name="userName"/>
 				<span id="name-text"></span>
 			</div>
 		</form>		
@@ -52,4 +52,18 @@
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/death-join.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function addScriptTag(src){
+			var script = document.createElement('script');
+			script.setAttribute('type','text/javascript');
+			script.src = src;
+			document.body.appendChild(script);
+		};
+		window.onload = function(){
+			addScriptTag('http://weixin-test-ziweigamepoch.c9users.io/api/users?jsonp=&callback=cb');
+		}
+		function cb(data){
+		console.log(data);
+		}
+	</script>
 </html>

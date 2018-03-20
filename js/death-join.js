@@ -1,3 +1,4 @@
+
 			$("#name").blur(function() {
 	         	var user = $("#name").val();
 	         	var name = /^[a-zA-Z\u4e00-\u9fa5]+$/;
@@ -75,8 +76,24 @@
 		  alert(str);
 		  return false;
 		} else {
-		  $('.auth-form1').submit();
-//			alert('完成');
+			$.ajax({
+				//几个参数需要注意一下
+				cache: true,
+				type: "POST",//方法类型
+				dataType: "json",//预期服务器返回的数据类型
+				url: "http://weixin-test-ziweigamepoch.c9users.io/api/users",//url
+	            data:$('#form').serialize(),
+				success: function (result) {
+				console.log(result);//打印服务端返回的数据(调试用)
+				if (result.resultCode == 200) {
+				alert("SUCCESS");
+				};
+				},
+				error : function() {
+				alert("异常！");
+				}
+			});
+		 
 		 }
 		}
 		 
