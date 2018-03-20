@@ -14,7 +14,7 @@
 			<a href="#" class="poa"></a>
 		</div>
 		<div class="G-main por">
-			<!--<div class="poa T-y">
+			<div class="poa T-y">
 				<h4>礼包活动</h4>
 				<p>gamepoch.com</p>
 				<h4>首胜奖励：500金币</h4>
@@ -24,15 +24,15 @@
 					<div><a href="javascipt:"><i></i></a>324</div>
 					<div><a href="javascipt:"><i></i></a>26</div>
 				</div>
-			</div>-->
+			</div>
 			<div class="T-top J-top poa" >
 				<div class="H-dh poa" >
 					<p>CDKEY</p>
-					<!--<p>激活码只能兑换一次</p>-->
 					<form action="" method="post" >
 						<input type="text" value="sdie-d24f-kge4" id="foo"/>
 						<input type="button" id="H-tj" value="一键复制" data-clipboard-action="copy" data-clipboard-target="#foo"/>
 					</form>
+					<div class="jt-none poa"></div>
 				</div>
 			</div>
 		</div>
@@ -40,8 +40,14 @@
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+		$('.jt-none').click(function(){
+			$('.T-top').css('display','none');
+		})
+		$('.T-bth').on('click', function() {
+			$('.T-top').css('display','block');
+		});
 		$(document).ready(function(){  
 	    var clipboard = new Clipboard('#H-tj');  
-	    });  
+	    }); 
 	</script>
 </html>

@@ -122,9 +122,6 @@
 	font-size: 0.6rem;
 	margin-top: 0.5rem;
 }
-.J-top{
-	display: block !important;
-}
 .J-top p{
 	font-size: 0.9rem !important;
 }
@@ -134,4 +131,12 @@
 #foo{
 	font-size: 0.9rem;
 	text-align: center;
+}
+.jt-none{
+	width: 1rem;
+	height: 1rem;
+	background: url(../img/jt-none.png) no-repeat center center;
+	background-size:100% 100%;
+	right: 0;
+	top: 0;
 }
