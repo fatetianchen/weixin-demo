@@ -42,6 +42,11 @@ ul,li{
 .mtop25{
 	margin-top: 0.25rem;
 }
+.pof{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 .D-title{
 	width: 100%;
 	height: 3rem;
@@ -52,6 +57,7 @@ ul,li{
 	font-size: 1rem;
 	z-index: 99;
 	box-shadow: 0rem 0.03rem 0.5rem #000;
+	z-index: 99;
 }
 .D-title a:nth-of-type(1){
 	display: inline-block;
@@ -74,7 +80,12 @@ ul,li{
 	background-size: 70% 70%;
 }
 .A-main-U{
+	width: 100%;
 	height: 25rem;
+}
+.A-main-l{
+	width: 100%;
+	height: 22.5rem;
 }
 .ain-op{
 	/*opacity: 0 ;*/
@@ -116,4 +127,7 @@ ul,li{
 		opacity: 1 ;
 		transform: translate(0rem,0rem);
 	}
+}
+.A-main-h{
+	height: 3rem;	
 }

@@ -77,19 +77,17 @@
 		  return false;
 		} else {
 			$.ajax({
-				//几个参数需要注意一下
-				cache: true,
 				type: "POST",//方法类型
 				dataType: "json",//预期服务器返回的数据类型
 				url: "http://weixin-test-ziweigamepoch.c9users.io/api/users",//url
 	            data:$('#form').serialize(),
 				success: function (result) {
-				console.log(result);//打印服务端返回的数据(调试用)
-				if (result.resultCode == 200) {
-				alert("SUCCESS");
-				};
+					alert('已提交');
+					console.log(result);
+				//console.log(result);//打印服务端返回的数据(调试用)
 				},
-				error : function() {
+				error : function(err) {
+					console.log(err);
 				alert("异常！");
 				}
 			});

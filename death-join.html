@@ -8,7 +8,7 @@
 		<script src="js/viewport.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<form id="form" onsubmit="return false" action="##" method="post" class="auth-form1">
+		<form id="form" onsubmit="return false" action="##" method="post" >
 
 			<div class="C-mian mian-top">
 				死亡班机2 线下赛
@@ -41,7 +41,7 @@
 				<input type="text" id="name" placeholder="输入姓名"  class="fl" name="userName"/>
 				<span id="name-text"></span>
 			</div>
-		</form>		
+			
 			<div class="C-button clearfix arr-an ain">
 				<button class="bth-y fl">
 				</button>
@@ -49,10 +49,16 @@
 					我要加入
 				</button>
 			</div>
+		</form>	
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/death-join.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+		window.onload=function(){ 
+			$('.ain').addClass('ain-bon');
+		}		
+	</script>
+	<!--<script type="text/javascript">
 		function addScriptTag(src){
 			var script = document.createElement('script');
 			script.setAttribute('type','text/javascript');
@@ -63,10 +69,7 @@
 			addScriptTag('http://weixin-test-ziweigamepoch.c9users.io/api/users?jsonp=&callback=cb');
 		}
 		function cb(data){
-		console.log(data);
+			console.log(data);
 		}
-		window.onload=function(){ 
-			$('.ain').addClass('ain-bon');
-		}
-	</script>
+	</script>-->
 </html>
