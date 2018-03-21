@@ -19,6 +19,9 @@ $.ajax({
 				}else if(dada[i].matchId==3){
 //					console.log(dada[i].headImg);
 					$('#arrul3').append("<li><div class='poa toux'><img src='"+dada[i].headImg+"' alt='' /></div><div class='D-name poa'><h4>"+dada[i].name+"</h4><p><span></span>"+dada[i].location+"</p></div><div class='D-sj poa'>"+dada[i].score+"</div></li>")
+				}else if(dada[i].matchId==4){
+//					console.log(dada[i].headImg);
+					$('#arrul3').append("<li><div class='poa toux'><img src='"+dada[i].headImg+"' alt='' /></div><div class='D-name poa'><h4>"+dada[i].name+"</h4><p><span></span>"+dada[i].location+"</p></div><div class='D-sj poa'>"+dada[i].score+"</div></li>")
 				}
 			}
         },  
