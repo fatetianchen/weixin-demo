@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "宋体";
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+.clearfix:after,.clearfix:before{  /*清除浮动*/
+   content: "";
+   display: table;
+}
+.clearfix:after{
+   clear: both;
+}
+.clearfix{
+  *zoom:1; /*兼容IE和IE7*/
+}
+.poa{
+	position: absolute;
+}
+.por{
+	position: relative;
+}	
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.mtop{
+	margin-top: 0.2rem;
+}
+.pl{
+	padding-left: 6rem;
+}
+.mtop25{
+	margin-top: 0.25rem;
+}
+.pof{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.D-title{
+	width: 100%;
+	height: 3rem;
+	background-color: #4bc1d2;
+	text-align: center;
+	line-height: 3rem;
+	color: #fff;
+	font-size: 1rem;
+	z-index: 99;
+	box-shadow: 0rem 0.03rem 0.5rem #000;
+	z-index: 99;
+}
+.D-title a:nth-of-type(1){
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	left: 0.63rem;
+	top: 50%;
+	margin-top: -0.75rem;
+	background: url(../img/D-fanh_03.png) no-repeat center center;
+	background-size: 80% 80%;
+}
+.D-title a:nth-of-type(2){
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	right: 0.5rem;
+	top: 50%;
+	margin-top: -1rem;
+	background: url(../img/D-yonfhu_03.png) no-repeat center center;
+	background-size: 70% 70%;
+}
+.A-main-U{
+	width: 100%;
+	height: 25rem;
+}
+.A-main-l{
+	width: 100%;
+	height: 22.5rem;
+}
+.ain-op{
+	/*opacity: 0 ;*/
+	animation: name 1s ease ;
+}
+@keyframes name{
+	0%{
+		opacity: 0 ;
+		transform:scale(0,0);
+		}
+	60%{
+		opacity: 0.5 ;
+		transform:scale(1,1);
+	}
+	80%{
+		opacity: 0.8 ;
+		transform:scale(0.8,0.8);
+	}
+	100%{
+		opacity: 1 ;
+		transform:scale(1,1);
+	}
+}
+.arr-yiny{
+	box-shadow: 0px 1px 15px #888888;
+}
+.arr-an{
+	box-shadow: 0px 3px 15px #888888;
+}
+.ain-bon{
+	animation: butt 0.8s ease ;
+}
+@keyframes butt{
+	0%{
+		opacity: 0 ;
+		transform: translate(0rem,3rem);
+		}
+	100%{
+		opacity: 1 ;
+		transform: translate(0rem,0rem);
+	}
+}
+.A-main-h{
+	height: 3rem;	
+}
