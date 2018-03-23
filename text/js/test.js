@@ -60,10 +60,6 @@ $('#cdkey').bind('input propertychange', function() {
 });
 function formValidate(){
 		postData();
-		// todo：成功。。。。
-//		onSuccess();
-//		// todo: 失败。。。
-//		onFailure();
 	}
 $('.button').on('click', function() {
 	formValidate();
@@ -81,7 +77,7 @@ function postData(url, data) {
 		success: function (result) {			
 			if(result.isUsed == false){
 				alert('兑换成功');
-				var codeId = [];
+				var codeIdd = [];
 				$.ajax({ //获取四个conde
 				    type: "GET",
 				    dataType: "json",
@@ -91,33 +87,45 @@ function postData(url, data) {
 //					console.log(result);
 				        $(".title").empty(); 
 				        for(var i in result) { 
-				            if(result[i].codeType==1){ 								
-				                codeId.push( result[i]);
+				            if(result[i].codeType==1&&result[i].isUsed==false){ 
+//				            	console.log(result[i])
+				            		 codeIdd.push( result[i]);				               
 				            }
 				        }
-				        $('.title').html("<p>"+codeId[0].codeString+"</p>");
+				        $('.title').html("<p>"+codeIdd[0].codeString+"</p>");
 						$('#cdkey').val("");
 						$(".bth").attr("disabled",true);
 						$('.bth').css({'background-color':'#ccc','color':'#888'});
-//				        console.log(codeId[0]);				        
+//				        console.log(codeId[0]);
+						var codeIdo = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+codeIdd[0]._id+"?_method=PATCH";
+						console.log(codeIdo)
+						$.ajax({
+							url: codeIdo,
+							method:'POST',
+							data:{"isUsed":true},//false true
+							success: function(data){
+								console.log(data)
+							},					
+							error : function(err) {
+								console.log(err);
+							}
+						});
 				    },
 				});
 //				此处修改code参数
-//				var codeId = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+result._id+"?_method=PATCH";
-////				console.log(codeId)
-//				$.ajax({
-//					url: codeId,
-//					method:'POST',
-//					data:{"isUsed":false},//false true
-//					success: function(data){
-//						console.log(data)
-//					},					
-//					error : function(err) {
-//						console.log(err);
-//					}
-//				});
-			}else{
-				alert('改code已使用');
+				var codeId = "https://weixin-test-ziweigamepoch.c9users.io/api/codes/"+result._id+"?_method=PATCH";
+//				console.log(codeId)
+				$.ajax({
+					url: codeId,
+					method:'POST',
+					data:{"isUsed":true},//false true
+					success: function(data){
+						console.log(data)
+					},					
+					error : function(err) {
+						console.log(err);
+					}
+				});
 			}
 		},
 		error : function(err) {
