@@ -77,7 +77,6 @@
 //				}
 //		});
 //}
-
 //$.ajax({
 //		type: "POST",
 //		url: "https://weixin-test-ziweigamepoch.c9users.io/api/codes/insertMany",
@@ -97,3 +96,6 @@
 //					$('.fenye').css('display','none');
 //					},
 //				});
+怎么获取关注公众号 用户微信号微信信息
+怎么分享
+怎么使用JSSDK

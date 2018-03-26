@@ -1,4 +1,3 @@
-	$(".bth").attr("disabled",true);
 	$("#cdkey").bind('input propertychange',function(){
          	var user = $("#cdkey").val(); 
          	var Chinese = /^[\w\?%&=\-_]+$/;
@@ -71,7 +70,7 @@ function postData(url, data) {
 		dataType: "json",//预期服务器返回的数据类型
 		url: "http://weixin-test-ziweigamepoch.c9users.io/api/codes/check",//url
 		data: {
-		"codeType":"0",
+		"codeType":"1",
 		"codeString":$('#cdkey').val()
 		},
 		success: function (result) {			
@@ -87,7 +86,7 @@ function postData(url, data) {
 //					console.log(result);
 				        $(".title").empty(); 
 				        for(var i in result) { 
-				            if(result[i].codeType==1&&result[i].isUsed==false){ 
+				            if(result[i].codeType==2&&result[i].isUsed==false){ 
 //				            	console.log(result[i])
 				            		 codeIdd.push( result[i]);				               
 				            }
@@ -120,10 +119,10 @@ function postData(url, data) {
 					method:'POST',
 					data:{"isUsed":true},//false true
 					success: function(data){
-						console.log(data)
+//						console.log(data)
 					},					
 					error : function(err) {
-						console.log(err);
+//						console.log(err);
 					}
 				});
 			}
