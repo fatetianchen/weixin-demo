@@ -70,7 +70,7 @@ function postData(url, data) {
 		dataType: "json",//预期服务器返回的数据类型
 		url: "http://weixin-test-ziweigamepoch.c9users.io/api/codes/check",//url
 		data: {
-		"codeType":"1",
+		"codeType":"0",
 		"codeString":$('#cdkey').val()
 		},
 		success: function (result) {			
@@ -86,7 +86,7 @@ function postData(url, data) {
 //					console.log(result);
 				        $(".title").empty(); 
 				        for(var i in result) { 
-				            if(result[i].codeType==2&&result[i].isUsed==false){ 
+				            if(result[i].codeType==1&&result[i].isUsed==false){ 
 //				            	console.log(result[i])
 				            		 codeIdd.push( result[i]);				               
 				            }
